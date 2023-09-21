@@ -10,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
+    azureSubscription: 'haiazureportal'
     appType: 'webAppLinux'
-    appName: '<Name of web app>'
+    appName: 'haidemowebapp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
